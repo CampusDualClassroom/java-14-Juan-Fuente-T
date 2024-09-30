@@ -19,8 +19,7 @@ public class PoliceOfficer extends Person {
 //		builder.append(".");
 //		return  builder;
 //	}
-public String getDetails() {
+public void getDetails() {
 	System.out.println(super.name + " " + super.surname + ", su escuadra es " + this.squad);
-	return super.name + ", " + super.surname + ", su escuadra es " + this.squad;
 }
 }

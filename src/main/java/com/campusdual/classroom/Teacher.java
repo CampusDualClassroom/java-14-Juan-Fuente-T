@@ -20,8 +20,7 @@ public class Teacher extends Person {
 //	}
 
 	@Override
-	public String getDetails() {
+	public void getDetails() {
 		System.out.println(super.name + " " + super.surname + ", su area es " + this.area);
-		return super.name + ", " + super.surname + ", su area es " + this.area;
 	}
 }

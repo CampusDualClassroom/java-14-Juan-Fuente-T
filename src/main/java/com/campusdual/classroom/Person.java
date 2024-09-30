@@ -8,10 +8,7 @@ public class Person {
 		this.name = name;
 		this.surname = surname;
 	}
-//	public String getDetails(){
-//		System.out.println(this.name + " " + this.surname);
-//		return  this.name + this.surname;
-//	}
+
 //public StringBuilder getDetails() {
 //	StringBuilder builder = new StringBuilder();
 //	builder.append("La persona es ");
@@ -20,8 +17,7 @@ public class Person {
 //	builder.append(this.surname);
 //	return builder;
 // }
-	public String getDetails() {
-		System.out.println(this.name + " " + this.surname );
-		return this.name + " " + this.surname;
+	public void getDetails() {
+		System.out.println("La persona es " + this.name + " " + this.surname );
 	}
 }
