@@ -1,5 +1,6 @@
 package com.campusdual.classroom;
 
+
 public class Doctor extends Person {
 
 	protected String specialization;
@@ -8,4 +9,17 @@ public class Doctor extends Person {
 		super(name, surname);
 		this.specialization = specialization;
 	}
+//	@Override
+//	public StringBuilder getDetails(){
+//		StringBuilder builder = new StringBuilder();
+//		builder.append(super.getDetails());
+//		builder.append(", su especializacion es ");
+//		builder.append(this.specialization.toLowerCase());
+//		builder.append(".");
+//		return  builder;
+//	}
+@Override
+public void getDetails() {
+	System.out.println(super.name + " " + super.surname + ", su especializacion es " + this.specialization);
+}
 }
