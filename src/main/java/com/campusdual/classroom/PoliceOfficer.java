@@ -9,8 +9,18 @@ public class PoliceOfficer extends Person {
 		this.squad = squad;
 	}
 
-	@Override
-	public String getDetails(){
-		System.out.println(super.name + " " + super.surname + ", " + this.squad);
-		return this.name + ", " + this.surname + ", " + this.squad;	}
+//	@Override
+//	public StringBuilder getDetails(){
+//		StringBuilder builder = new StringBuilder();
+//		builder.append(super.getDetails());
+//		builder.append(", ");
+//		builder.append("su escuadra es ");
+//		builder.append(this.squad);
+//		builder.append(".");
+//		return  builder;
+//	}
+public String getDetails() {
+	System.out.println(super.name + " " + super.surname + ", su escuadra es " + this.squad);
+	return super.name + ", " + super.surname + ", su escuadra es " + this.squad;
+}
 }
